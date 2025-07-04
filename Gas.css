@@ -1,0 +1,89 @@
+.GLP{
+    padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.GLP h2{
+    font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.GLP-Contenido{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.GLP-Contenido p{
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.GLP-Imagen img{
+    flex:1;
+    width:50%;
+}
+
+
+.GNV{
+    padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.GNV h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.GNV-Contenido{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.GNV-Contenido p{
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.GNV-Imagen img{
+    flex:1;
+    width:50%;
+}
+
+@media (max-width: 768px){
+ .GLP-Contenido{
+  flex-direction: column;
+ }
+
+ .GLP-Imagen img{
+  align-items: center;
+ }
+
+ .GNV-Contenido{
+  flex-direction: column;
+ }
+
+ .GNV-Imagen img{
+  align-items: center;
+ }
+
+}

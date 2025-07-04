@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindGas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="RevisionTecnico.css">
+    <link rel="stylesheet" href="Contactenos.css"/>
+    <link rel="stylesheet" href="Gas.css"/>
+    <link rel="stylesheet" href="footer.css"/>
+  </head>
+  <body>
+    <!-- MENÚ SUPERIOR -->
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img src="Images/IconoInicioSesion2.png" alt="Logo" />
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <ul class="menu-horizontal">
+        <li>
+          <a href="#">Sobre Nosotros</a>
+          <ul class="menu-vertical">
+            <li><a href="#">Mision Y Vision</a></li>
+            <li><a href="#">Alianzas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Conversión a Gas</a>
+          <ul class="menu-vertical">
+            <li><a href="#">Conversión a GLP</a></li>
+            <li><a href="#">Conversión a GNV</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Revision Técnica</a></li>
+        <li><a href="#">Contactenos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN HISTORIA -->
+    <section class="historia">
+      <h2>Encuentre su gasolinera preferida</h2>
+      <div class="historia-contenido">
+        <div class="historia-texto">
+          <p></p>
+          <p>
+            Descargue la extensión para google Maps            
+          </p>
+          <p>
+            <img 
+            src="Images/IconoGoogleMaps.png"
+            alt="imagen de google maps"
+            />
+          </p>
+          <p>
+            Descargue la extensión para Waze
+          </p>
+          <p>
+            <img 
+            src="Images/IconoWaze.png"
+            alt="Aqui va el icono de waze"
+            />
+          </p>
+        </div>
+        <div class="Mapa-Ubicacion">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.076112564044!2d-77.07587018861946!3d-12.076578377696128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91c0f19df11%3A0x6a332a1c8a99047b!2sPueblo%20Libre!5e0!3m2!1ses-419!2spe!4v1749329066941!5m2!1ses-419!2spe"
+           style="border:0;" 
+           allowfullscreen="" 
+           loading="lazy" 
+           referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="Revision-Tecnica">
+      <h2>Seleccione su local de Revisión Técnica</h2>
+      <div class="RT-Imagenes">
+        <img
+        src="Images/RT-Img.png"
+        alt="Aqui va farenet"
+        />
+        <img
+        src="Images/RT-Img2.png"
+        alt="Aqui va RTP"
+        />
+        <img
+        src="Images/RT-Img3.png"
+        alt="Aqui va J&J"
+        />
+        <img
+        src="Images/RT-Img4.png"
+        alt="Aqui va CIT"
+        />
+        <img
+        src="Images/RT-Img5.png"
+        alt="Aqui va blasan"
+        />
+        <img
+        src="Images/RT-Img6.png"
+        alt="Aqui va Ares "
+        />
+      </div>
+    </section>
+
+<section class="GLP">
+ <h2>Conversión a GLP</h2>
+ <div class="GLP-Contenido">
+  <p>Gas Licuado de Petroleo(conocido como GLP) es un combustible limpio y eficiente que es popular en vehiculos de gran recorrido, su uso es por medio de la intalación de un tanque de tipo cilindro o toroidal segun el espacio de este, su costo influye en la cantidad maxima que este tenga, sea:  8, 10 o 12 galones ,si hablamos de su precio de abastecimiento se reduce en un 40% del precio de un tanque lleno de gasolina comun. 
+    </p>
+    <div class ="GLP-Imagen">
+      <img
+      src="Images/GLPlogo.png"
+      alt="Aqui iria el logo de GLP"
+      />
+    </div>
+</div>
+</section>
+
+<section class="GNV">
+ <h2>Conversión a GNV</h2>
+ <div class="GNV-Contenido">
+   <p>Gas Natural Vehicular (GNV) es un combustible para cualquier medio de transporte terrestre, su instalación es a traves de uno o varios tanques que almacena como maximo 8 galones cada uno, su precio de abastecimiento resulta hasta el 30% del precio maximo a pagar por llenar el vehiculo con gasolina.</p>
+      <div class="GNV-Imagen">
+        <img 
+        src="Images/LOGOGNV_2.png"
+        alt="Aqui va el logo de GNV"
+        />
+      </div>
+  </div>
+</section>
+
+<!-- SECCIÓN CONTÁCTANOS -->
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <div class="contactenos-contenido">
+        <!-- FORMULARIO -->
+        <form class="formulario-contactenos" id="formularioContactenos" name="frm">
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres"/>
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos"/>
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="NumeroDoc">Numero de Documento</label>
+            <input type="number" id="NumeroDoc" name="NumeroDoc"/>
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="district">Distrito:</label>
+            <select id="district" name="district">
+              <option value="Ancon">Ancón</option>
+              <option value="Ate">Ate</option>
+              <option value="Barranco">Barranco</option>
+              <option value="Brenia">Breña</option>
+              <option value="Carabayllo">Carabayllo</option>
+              <option value="Chorrillos">Chorrillos</option>
+              <option value="Comas">Comas</option>
+              <option value="ElAgustino">El Agustino</option>
+              <option value="Independencia">Independencia</option>
+              <option value="JesusMaria">Jesús María</option>
+              <option value="Lamolina">La Molina</option>
+              <option value="Lavictoria">La Victoria</option>
+              <option value="Lince">Lince</option>
+              <option value="Losolivos">Los Olivos</option>
+              <option value="Lurin">Lurín</option>
+              <option value="Magdalena">Magdalena</option>
+              <option value="Miraflores">Miraflores</option>
+              <option value="Pachacamac">Pachacámac</option>
+              <option value="Pueblolibre">Pueblo Libre</option>
+              <option value="Puentepiedra">Puente Piedra</option>
+              <option value="Rimac">Rímac</option>
+              <option value="Sanborja">San Borja</option>
+              <option value="Sanisidro">San Isidro</option>
+              <option value="Sanluis">San Luis</option>
+              <option value="Sanmartin">San Martín de Porres</option>
+              <option value="Sanmi">San Miguel</option>
+              <option value="Santanita">Santa Anita</option>
+              <option value="Surco">Surco</option>
+              <option value="Surquillo">Surquillo</option>
+              <option value="VillaES">Villa el Salvador</option>
+              <option value="VMT">Villa María del Triunfo</option>      
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="Email">Correo electrónico:</label>
+            <input type="text" id="Email" name="Email"/>
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">Comentario (opcional):</label>
+            <textarea id="asunto" name="asunto" rows="2.7"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>¿Eres Conductor?</label>
+            <div class="radios">
+              <label
+                ><input type="radio" name="Conductor" value="si" /> Sí</label
+              >
+              <label
+                ><input type="radio" name="Conductor" value="no" /> No</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <!-- TEXTO A LA DERECHA -->
+        <div class="contactenos-instrucciones">
+          <p>
+            Complete el formulario con tus datos. Lo contactaremos con usted en los proximos días.
+          </p>
+          <p>
+            Recuerda ingresar un correo válido y digitar tu documento
+            correctamente. Estaremos a su servicio.
+          </p>
+          <div
+            id="mensajeEnviado"
+            class="mensaje-enviado"
+            style="display: none"
+          >
+            Mensaje enviado correctamente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="Images/LogoFindGas.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>FINDGAS</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="Documents/Politica de Privacidad.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="Documents/Terminos y Condiciones.pdf">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="Documents/Datos-Personales.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>                     
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* Revision Tecnica */
+.Revision-tecnica{
+ padding-top: 6rem; /* Espacio superior para evitar que el menú tape el contenido */
+  padding-bottom: 3rem; /* Espaciado inferior */
+  padding-left: 2rem; /* Espaciado lateral izquierdo */
+  padding-right: 2rem; /* Espaciado lateral derecho */
+  background-color: #f9f9f9; /* Fondo suave */
+  color: #333; /* Texto gris oscuro legible */
+}
+
+.Revision-tecnica h2{
+  font-size: 2rem; /* Tamaño de título */
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.RT-Imagenes{
+ display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  justify-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  
+}
+.RT-Imagenes img:nth-child(4){
+  grid-column: 1/ 2;
+}
+
+.RT-Imagenes img:nth-child(5){
+  grid-column: 2/ 3;
+}
+
+.RT-Imagenes img:nth-child(6){
+  grid-column: 3/ 4;
+}
+
+.RT-Imagenes img{
+  width: 24%;
+  height: auto;
+}
+
+@media (max-width: 768px){
+  .RT-Imagenes img{
+    width: 51%;
+    height: auto;
+  }
+}
